@@ -5,20 +5,17 @@
 - Home
 - About
 - Projects
-- Team
+- Members
+
+## All
+
+- Header (website tabs)
+- Footer (insta)
 
 ## Home
 
-- Hero
-- What is GWC?
-- What we're exploring
-    e.g.
-    - AI
-    - Game Dev
-    - Community Projects
-- Featured Projects
-- This Year
-- Footer
+- Title = "Girls Who Code"
+- Group photo
 
 ## About
 
@@ -26,16 +23,16 @@
 - What We Do
 - Meeting Info
 
+## Members
+
+- 2026-27 Leadership
+- General member info
+
 ## Projects
 
 - Project showcase
 - Project categories
 - Indiv project pages
-
-## Team
-
-- 2026-27 Leadership
-- General member info
 
 ## Design
 
