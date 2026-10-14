@@ -1,0 +1,375 @@
+:root {
+  --background: #f5f3ff;
+  --surface: #ffffff;
+  --text: #29243d;
+  --muted: #615a75;
+  --accent: #6842c2;
+  --accent-dark: #48288f;
+  --border: #e1d9f2;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: var(--background);
+  color: var(--text);
+  font-family: Arial, sans-serif;
+  line-height: 1.7;
+}
+
+a {
+  color: var(--accent);
+  text-underline-offset: 4px;
+}
+
+a:hover {
+  color: var(--accent-dark);
+}
+
+a:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 5px;
+}
+
+header {
+  padding: 24px;
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+  text-align: center;
+}
+
+header > p {
+  margin: 0 0 14px;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+nav {
+  line-height: 2.8;
+}
+
+nav a {
+  display: inline-block;
+  margin: 3px;
+  padding: 2px 14px;
+  border-radius: 999px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+nav a:hover {
+  background: var(--background);
+}
+
+nav a[aria-current="page"] {
+  background: var(--accent);
+  color: white;
+}
+
+main {
+  flex: 1;
+  width: min(1100px, 92%);
+  margin: 0 auto;
+  padding: 48px 0 64px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  line-height: 1.25;
+}
+
+h1 {
+  margin: 0 0 16px;
+  font-size: clamp(2.2rem, 6vw, 3.8rem);
+  letter-spacing: -0.04em;
+  color: var(--accent-dark);
+}
+
+h2 {
+  margin-top: 0;
+  font-size: 1.7rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+}
+
+h4 {
+  margin-bottom: 8px;
+}
+
+main > p {
+  max-width: 720px;
+  color: var(--muted);
+}
+
+main > section {
+  margin-top: 32px;
+  padding: clamp(20px, 4vw, 36px);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  box-shadow: 0 8px 24px rgb(48 30 86 / 5%);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 14px;
+}
+
+video,
+iframe {
+  max-width: 100%;
+  border-radius: 14px;
+}
+
+blockquote {
+  margin: 24px 0;
+  padding: 16px 24px;
+  border-left: 5px solid var(--accent);
+  border-radius: 0 12px 12px 0;
+  background: var(--background);
+  font-style: italic;
+}
+
+blockquote p {
+  margin: 0;
+}
+
+hr {
+  width: 100%;
+  margin: 0;
+  border: 0;
+}
+
+.member-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 24px;
+  align-items: start;
+}
+
+.member-card {
+  min-width: 0;
+  width: 100%;
+  max-width: 360px;
+  justify-self: center;
+  padding: 24px;
+  overflow-wrap: anywhere;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-top: 5px solid var(--accent);
+  border-radius: 18px;
+  box-shadow: 0 8px 20px rgb(48 30 86 / 8%);
+  text-align: center;
+}
+
+.member-card h3 {
+  margin: 0 0 10px;
+  font-size: 1.5rem;
+}
+
+.member-card .member-role {
+  display: inline-block;
+  margin: 0 0 20px;
+  padding: 5px 14px;
+  border-radius: 999px;
+  background: var(--background);
+  color: var(--accent-dark);
+  font-size: 0.9rem;
+}
+
+.member-card img {
+  display: block;
+  width: 100%;
+  max-width: 250px;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  margin: 0 auto 20px;
+  border-radius: 14px;
+}
+
+.member-card ul {
+  padding-left: 22px;
+  text-align: left;
+}
+
+.member-card li {
+  margin-bottom: 5px;
+}
+
+.project-list {
+  display: grid;
+  gap: 36px;
+}
+
+.project {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 32px;
+  align-items: center;
+}
+
+.project + .project {
+  padding-top: 36px;
+  border-top: 1px solid var(--border);
+}
+
+.project:nth-child(even) .project-media {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.project:nth-child(even) .project-description {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.project-media,
+.project-description {
+  min-width: 0;
+}
+
+.project-media img,
+.project-media video {
+  display: block;
+  width: 100%;
+}
+
+.project-description h2 {
+  margin-bottom: 12px;
+}
+
+footer {
+  padding: 28px 20px;
+  background: var(--surface);
+  border-top: 1px solid var(--border);
+  text-align: center;
+  color: var(--muted);
+}
+
+footer p {
+  margin: 6px 0;
+}
+
+@media (max-width: 650px) {
+  header {
+    padding: 20px 12px;
+  }
+
+  nav a {
+    padding: 2px 8px;
+  }
+
+  main {
+    padding-top: 32px;
+  }
+
+  .member-gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .project {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .project:nth-child(even) .project-media,
+  .project:nth-child(even) .project-description {
+    grid-column: auto;
+    grid-row: auto;
+  }
+}
+
+/* Gentle entrance when a page opens */
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+main > h1,
+main > p,
+main > section {
+  animation: fade-in-up 450ms ease-out both;
+}
+
+/* Smooth navigation */
+nav a {
+  transition:
+    background-color 180ms ease,
+    color 180ms ease,
+    transform 180ms ease;
+}
+
+/* Slightly more depth on member cards */
+.member-card {
+  transition:
+    transform 200ms ease,
+    box-shadow 200ms ease,
+    border-color 200ms ease;
+}
+
+/* Smooth link color changes */
+a {
+  transition: color 180ms ease;
+}
+
+/* A small accent under the main heading */
+main > h1::after {
+  content: "";
+  display: block;
+  width: 56px;
+  height: 4px;
+  margin-top: 16px;
+  border-radius: 999px;
+  background: var(--accent);
+}
+
+/* Keep hover movement for devices with a mouse */
+@media (hover: hover) and (pointer: fine) {
+  nav a:hover {
+    transform: translateY(-2px);
+  }
+
+  .member-card:hover {
+    transform: translateY(-4px);
+    border-color: var(--accent);
+    box-shadow: 0 14px 28px rgb(48 30 86 / 12%);
+  }
+}
+
+/* Respect visitors who prefer less motion */
+@media (prefers-reduced-motion: reduce) {
+  main > h1,
+  main > p,
+  main > section {
+    animation: none;
+  }
+
+  a,
+  nav a,
+  .member-card {
+    transition: none;
+  }
+
+  nav a:hover,
+  .member-card:hover {
+    transform: none;
+  }
+}
