@@ -373,3 +373,239 @@ main > h1::after {
     transform: none;
   }
 }
+
+.member-anya {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 300px;
+  padding: 20px;
+  margin: 20px auto;
+  background-color: rgb(221, 170, 144);
+  color: #366f29;
+  border: 2px solid purple;
+  border-radius: 16px;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+.member-anya img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 50px;
+}
+
+.member-anya ul {
+  text-align: left;
+  padding-left: 24px;
+}
+
+.member-vini {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 300px;
+  padding: 20px;
+  margin: 20px auto;
+  background-color: lightblue;
+  color: purple;
+  border: 2px solid black;
+  border-radius: 16px;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+.member-vini img {
+  width: 80%;
+  height: auto;
+  border-radius: 50px;
+}
+
+.member-vini ul {
+  text-align: left;
+  padding-left: 24px;
+}
+
+.member-isabella {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 300px;
+  padding: 20px;
+  margin: 20px auto;
+  background-color: #eee6fa;
+  color: #493364;
+  border: 2px solid #80649e;
+  border-radius: 16px;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+.member-isabella img {
+  width: 100%;
+  height: auto;
+  border-radius: 50px;
+}
+
+.member-isabella ul {
+  text-align: left;
+  padding-left: 24px;
+}
+
+.member-publicity {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 300px;
+  padding: 20px;
+  margin: 20px auto;
+  background-color: #fce4ec;
+  color: #743b54;
+  border: 2px solid #b76e8a;
+  border-radius: 16px;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+/* Shared styling for club members */
+.member-card.club-member {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 300px;
+  padding: 20px;
+  margin: 20px auto;
+  border: 2px solid;
+  border-radius: 16px;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+.member-card.club-member img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 50px;
+  margin: 0 auto;
+}
+
+.member-card.club-member ul {
+  text-align: left;
+  padding-left: 24px;
+}
+
+/* Aadyaa */
+.member-aadyaa {
+  background-color: rgb(221, 170, 144);
+  color: #366f29;
+  border-color: purple;
+}
+
+/* Akshadha */
+.member-akshadha {
+  background-color: rgb(186, 197, 241);
+  color: #000;
+  border-color: #000;
+}
+
+/* Saachi — soft green */
+.member-saachi {
+  background-color: #e5efdf;
+  color: #344b30;
+  border-color: #78946b;
+}
+
+/* Yubeen — darker text for readability */
+.member-card.member-yubeen {
+  background-color: pink;
+  color: #66364b;
+  border: 3px solid rgb(137, 195, 54);
+  border-radius: 19px;
+  font-family: Georgia, serif;
+}
+
+.member-card.member-yubeen img {
+  width: 75%;
+  border-radius: 15px;
+}
+
+/* Olivia */
+.member-card.member-olivia {
+  background-color: rgb(185, 185, 255);
+  color: rgb(68, 68, 142);
+  border: 1px solid rgb(79, 64, 162);
+}
+
+.member-card.member-olivia img {
+  border-radius: 50%;
+  border: 1px solid rgb(106, 106, 130);
+  box-sizing: border-box;
+}
+
+.member-olivia h3,
+.member-olivia h4 {
+  color: rgba(15, 6, 56, 0.904);
+  font-family: Georgia, "Times New Roman", serif;
+  font-style: italic;
+}
+
+.member-olivia .member-introduction,
+.member-olivia .member-learning {
+  font-family: "Times New Roman", serif;
+  font-size: 15px;
+}
+
+.member-olivia .member-learning {
+  color: rgb(65, 22, 94);
+}
+
+.member-olivia ul {
+  font-size: 15px;
+}
+
+/* Suhana */
+.member-card.member-suhana {
+  background-color: rgb(169, 211, 243);
+  color: #4412a1;
+  border: 6px solid rgb(228, 111, 228);
+  font-family: "Trebuchet MS", Arial, sans-serif;
+}
+
+.member-card.member-suhana img {
+  border-radius: 0;
+}
+
+/* Sophia — soft lavender */
+.member-sophia {
+  background-color: #eee6fa;
+  color: #493364;
+  border-color: #80649e;
+}
+
+/* Sahana */
+.member-sahana {
+  background-color: rgb(162, 7, 77);
+  color: #f4f8cb;
+  border-color: rgb(72, 10, 72);
+}
+
+.member-brielle {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 300px;
+  padding: 20px;
+  margin: 20px auto;
+  background-color: #e0edf9;
+  color: #344b70;
+  border: 2px solid #7895bc;
+  border-radius: 16px;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+/* Give every member the same accent bar, size, and raised appearance. */
+.member-gallery .member-card {
+  max-width: 300px;
+  padding: 20px;
+  margin: 20px auto;
+  border-top: 5px solid var(--accent);
+}
