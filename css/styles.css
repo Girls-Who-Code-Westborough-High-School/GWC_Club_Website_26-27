@@ -290,7 +290,6 @@ footer p {
   }
 }
 
-/* Gentle entrance when a page opens */
 @keyframes fade-in-up {
   from {
     opacity: 0;
@@ -309,7 +308,6 @@ main > section {
   animation: fade-in-up 450ms ease-out both;
 }
 
-/* Smooth navigation */
 nav a {
   transition:
     background-color 180ms ease,
@@ -317,7 +315,6 @@ nav a {
     transform 180ms ease;
 }
 
-/* Slightly more depth on member cards */
 .member-card {
   transition:
     transform 200ms ease,
@@ -325,12 +322,10 @@ nav a {
     border-color 200ms ease;
 }
 
-/* Smooth link color changes */
 a {
   transition: color 180ms ease;
 }
 
-/* A small accent under the main heading */
 main > h1::after {
   content: "";
   display: block;
@@ -341,7 +336,6 @@ main > h1::after {
   background: var(--accent);
 }
 
-/* Keep hover movement for devices with a mouse */
 @media (hover: hover) and (pointer: fine) {
   nav a:hover {
     transform: translateY(-2px);
@@ -354,7 +348,6 @@ main > h1::after {
   }
 }
 
-/* Respect visitors who prefer less motion */
 @media (prefers-reduced-motion: reduce) {
   main > h1,
   main > p,
@@ -464,7 +457,6 @@ main > h1::after {
   text-align: center;
 }
 
-/* Shared styling for club members */
 .member-card.club-member {
   box-sizing: border-box;
   width: 100%;
@@ -493,28 +485,24 @@ main > h1::after {
   padding-left: 24px;
 }
 
-/* Aadyaa */
 .member-aadyaa {
   background-color: rgb(221, 170, 144);
   color: #366f29;
   border-color: purple;
 }
 
-/* Akshadha */
 .member-akshadha {
   background-color: rgb(186, 197, 241);
   color: #000;
   border-color: #000;
 }
 
-/* Saachi — soft green */
 .member-saachi {
   background-color: #e5efdf;
   color: #344b30;
   border-color: #78946b;
 }
 
-/* Yubeen — darker text for readability */
 .member-card.member-yubeen {
   background-color: pink;
   color: #66364b;
@@ -528,7 +516,6 @@ main > h1::after {
   border-radius: 15px;
 }
 
-/* Olivia */
 .member-card.member-olivia {
   background-color: rgb(185, 185, 255);
   color: rgb(68, 68, 142);
@@ -562,7 +549,6 @@ main > h1::after {
   font-size: 15px;
 }
 
-/* Suhana */
 .member-card.member-suhana {
   background-color: rgb(169, 211, 243);
   color: #4412a1;
@@ -574,14 +560,12 @@ main > h1::after {
   border-radius: 0;
 }
 
-/* Sophia — soft lavender */
 .member-sophia {
-  background-color: #eee6fa;
-  color: #493364;
-  border-color: #80649e;
+  background-color: rgb(221, 170, 144);
+  color: #366f29;
+  border-color: purple;
 }
 
-/* Sahana */
 .member-sahana {
   background-color: rgb(162, 7, 77);
   color: #f4f8cb;
@@ -602,7 +586,6 @@ main > h1::after {
   text-align: center;
 }
 
-/* Give every member the same accent bar, size, and raised appearance. */
 .member-gallery .member-card {
   max-width: 300px;
   padding: 20px;
